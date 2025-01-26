@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div style="font-size: large; margin-bottom: 10px;">Ordenar Por:</div>
+        <div id="precio">
+            <div id="ordenar_precio">Precio</div>
+            <div id="icon" style="cursor: pointer;">
+                <img src="./assets/images/arrow-down-sign-to-navigate.png" height="15px" width="15px" alt="dropdown">
+            </div>
+            <ul id="dropdown-options" style="display: none; list-style: none; padding: 0; margin: 0;">
+                <li><a href="#">Menor a $2.000.000</a></li>
+                <li><a href="#">Entre $2.000.000 y $5.000.000</a></li>
+                <li><a href="#">Entre $5.000.000 y $10.000.000</a></li>
+                <li><a href="#">Mayor a $10.000.000</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script>
+        const dropdownIcon = document.getElementById('icon');
+        const options = document.getElementById('dropdown-options');
+        const dropdownOptions = document.getElementById('dropdown-options');
+                dropdownIcon.addEventListener('click', function() {
+                dropdownOptions.classList.toggle('show');
+});
+        dropdownIcon.addEventListener('click', function() {
+            options.style.display = options.style.display === 'none' ? 'block' : 'none';
+        });
+    
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('#precio')) {
+                options.style.display = 'none';
+            }
+        });
+    </script>
+    <aside>
+        <div id="title">
+            <div><img id="car" src="./assets/images/electric-car.png" alt="electric-car"></div>
+            <div> Electric Cars</div>
+        </div>
+        <div id="menu">
+            <img id="hamburger" src="./assets/images/menu2.png" alt="menu">
+            <ul class="nav_list" style="list-style: none;">
+                <li class="nav_item">
+                    <a href="">Inicio</a>
+                </li>
+                <li class="nav_item">
+                    <a href="">Catalogo</a>
+                </li>
+                <li class="nav_item">
+                    <a href="">Ofertas</a>
+                </li>
+                <li class="nav_item">
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div id="derechos">
+            <div>
+            <img src="./assets/images/facebook.png" alt="facebook" height="30px" width="30px">
+            <img src="./assets/images/instagram.png" alt="instagram" height="30px" width="30px">
+            </div>
+            <div>
+            <p> Todos los derechos reservados</p>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <section>
+            <div class="card-image">
+                <img src="./assets/images/pngimg.com - electric_car_PNG59.png" height="200px" width="300px" alt="goggle">
+            </div>
+            <h2>Model City Car</h2>
+            <div class="ver">
+                <a href="">Ver Mas</a>
+            </div>
+        </section>
+        <section>
+            <div class="card-image">
+                <img src="./assets/images/pngimg.com - electric_car_PNG59.png" height="200px" width="300px" alt="goggle">
+            </div>
+            <h2>Model City Car</h2>
+            <div class="ver">
+                <a href="">Ver Mas</a>
+            </div>
+        </section>
+        <section>
+            <div class="card-image">
+                <img src="./assets/images/pngimg.com - electric_car_PNG59.png" height="200px" width="300px" alt="goggle">
+            </div>
+            <h2>Model City Car</h2>
+            <div class="ver">
+                <a href="">Ver Mas</a>
+            </div>
+        </section>
+        <section>
+            <div class="card-image">
+                <img src="./assets/images/pngimg.com - electric_car_PNG59.png" height="200px" width="300px" alt="goggle">
+            </div>
+            <h2>Model City Car</h2>
+            <div class="ver">
+                <a href="">Ver Mas</a>
+            </div>
+        </section>
+        <section>
+            <div class="card-image">
+                <img src="./assets/images/pngimg.com - electric_car_PNG59.png" height="200px" width="300px" alt="goggle">
+            </div>
+            <h2>Model City Car</h2>
+            <div class="ver">
+                <a href="">Ver Mas</a>
+            </div>
+        </section>
+        <section>
+            <div class="card-image">
+                <img src="./assets/images/pngimg.com - electric_car_PNG59.png" height="200px" width="300px" alt="goggle">
+            </div>
+            <h2>Model City Car</h2>
+            <div class="ver">
+                <a href="">Ver Mas</a>
+            </div>
+        </section>
+        <section>
+            <div class="card-image">
+                <img src="./assets/images/pngimg.com - electric_car_PNG59.png" height="200px" width="300px" alt="goggle">
+            </div>
+            <h2>Model City Car</h2>
+            <div class="ver">
+                <a href="">Ver Mas</a>
+            </div>
+        </section>
+        <section>
+            <div class="card-image">
+                <img src="./assets/images/pngimg.com - electric_car_PNG59.png" height="200px" width="300px" alt="goggle">
+            </div>
+            <h2>Model City Car</h2>
+            <div class="ver">
+                <a href="">Ver Mas</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            previous
+        </div>
+        <div>
+            1
+        </div>
+        <div>
+            2
+        </div>
+        <div>
+            3
+        </div>
+        <div>
+            next
+        </div>
+    </footer>
+</body>
+</html>
